@@ -6,7 +6,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, origins=["https://bookal9.github.io", "https://bookal9.github.io/"])
+CORS(app)
 
 @app.route('/')
 def health_check():
